@@ -1,0 +1,40 @@
+#app{
+  display: grid;
+  grid-template-columns:  32.28% 67.72%;
+
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: var(--shape-background);  
+}
+
+aside{
+  position: relative;
+  margin: 1.25rem;
+}
+
+.aside-container{
+  max-width: 25rem;
+
+  & > img{
+    width: 100%;
+  }
+
+  & .overlay{
+    position: absolute;
+    top: 0;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    
+    & img{
+      max-height: 3rem;
+    }
+  }
+
+  & h2{
+    font: var(--logo);
+    color: #FF598B;
+  }
+
+
+}
