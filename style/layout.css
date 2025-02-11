@@ -1,6 +1,6 @@
 #app{
   display: grid;
-  grid-template-columns:  32.28% 67.72%;
+  grid-template-columns:  32.8% 67.2%;
 
   height: 100vh;
   overflow: hidden;
@@ -8,34 +8,50 @@
   background-color: var(--shape-background);  
 }
 
-aside{
-  position: relative;
-  margin: 1.25rem;
+main{
+  overflow: auto;
+  padding:  1.25rem;
+
+  & .main-container {
+    max-width: 35rem;
+    margin-right: auto;
+}
 }
 
-.aside-container{
-  max-width: 25rem;
+aside{
+  overflow: hidden;
+  padding: 1.25rem;
+  position: relative;
 
-  & > img{
+
+  & > img {
+    position: absolute;
     width: 100%;
     border-radius: .75rem;
   }
 
-  & .overlay{
-    position: absolute;
-    top: 0;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    
-    & img{
-      max-height: 3rem;
+  & .aside-container{
+
+    padding-top: 2rem;
+    padding-left: 2rem;
+
+  
+    & #texto {
+      position: absolute;
+      z-index: 1;
+      & > img{
+        height: 3rem;
+        width: 2.9rem;
+        padding-bottom: 1rem;
+      }
+      & p {
+        font: var(--body-md);
+        padding-top: .25rem;
+      }
+      & .title{
+        font: var(--logo);
+        color: #FF598B;
+      }
     }
+   }
   }
-
-  & h2{
-    font: var(--logo);
-    color: #FF598B;
-  }
-
-
-}
