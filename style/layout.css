@@ -5,19 +5,18 @@
   height: 100vh;
   overflow: hidden;
 
-  background-color: var(--shape-background);  
+  background-color: var( --shape-background);  
 }
 
 main{
   overflow: auto;
-  padding:  1.25rem;
-
-  & .main-container {
-    max-width: 35rem;
-    margin-right: auto;
+  margin-right: 1rem;
+  margin-block: 1rem;
+  border-radius: .75rem;
+  padding-inline: 8.125rem;
+  padding-block: 5rem;
+  background-color:#212427;
 }
-}
-
 aside{
   overflow: hidden;
   padding: 1.25rem;
@@ -28,7 +27,7 @@ aside{
   position: absolute;
   z-index: 1;
   padding: 2rem;
-  max-width: 21rem;
+  max-width: 30rem;
 
   & > img {
     margin-bottom: 1rem;
