@@ -1,3 +1,23 @@
 form{
   margin-top: 2.5rem;
 }
+
+fieldset{
+  border: none;
+
+  display: grid;
+  gap: 1rem;
+}
+
+legend{
+  font: var(--heading-sm);
+  color: var(--text-heading);
+  
+}
+
+.legend-tittle{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: .75rem;
+}

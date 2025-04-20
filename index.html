@@ -33,38 +33,64 @@
         <section id="first">
           <form>
             <fieldset class="event-info">
-              <div class="about-event">
+              <div class="legend-tittle">
                 <img src="assets/icons/calendar.svg" alt="ìcone de calendário">
                 <legend>Sobre o evento</legend>
               </div>
 
               <div class="input-wrapper">
                 <label for="tittle">Título</label>
-                <input id="tittle" type="text" name="tittle" placeholder="Nome do evento">
+                <input 
+                id="tittle" 
+                type="text" 
+                name="tittle" 
+                placeholder="Nome do evento">
               </div>
 
               <div class="flex">
                 <div class="input-wrapper">
                   <label for="initial">Início</label>
-                  <input id="initial" type="date" name="initial" placeholder="DDD/MM/AAAA, --:--">
+                  <input 
+                  id="initial" 
+                  type="date" 
+                  name="initial" 
+                  lang="pt-br"
+                  placeholder="DDD/MM/AAAA, --:--">
                 </div>
   
                 <div class="input-wrapper">
                   <label for="end">Fim</label>
-                  <input id="end" type="date" name="end" placeholder="DDD/MM/AAAA, --:--">
+                  <input 
+                  id="end" 
+                  type="date" 
+                  name="end" 
+                  lang="pt-br"
+                  placeholder="DDD/MM/AAAA, --:--">
                 </div>
               </div>
 
               <div class="flex">
-                <div class="input-wrapper">
+                <div class="button-wrapper">
                   <label for="type">Tipo</label>
-                  <input id="type" type="" name="type">
+                  <button
+                  id="type" 
+                  type="" 
+                  name="type">
                 </div>
   
                 <div class="input-wrapper">
                   <label for="local">Local</label>
-                  <input id="local" type="text" name="local" placeholder="Link ou endereço">
+                  <input 
+                  id="local" 
+                  type="text" 
+                  name="local" 
+                  placeholder="Link ou endereço">
                 </div>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="description">Descrição</label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
               </div>
             </fieldset>
           </form>
