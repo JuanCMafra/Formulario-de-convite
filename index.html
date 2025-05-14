@@ -48,7 +48,7 @@
               </div>
 
               <div class="flex">
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-1">
                   <label for="initial">Início</label>
                   <input 
                   id="initial" 
@@ -58,7 +58,7 @@
                   placeholder="DDD/MM/AAAA, --:--">
                 </div>
   
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-2">
                   <label for="end">Fim</label>
                   <input 
                   id="end" 
@@ -70,15 +70,22 @@
               </div>
 
               <div class="flex">
-                <div class="button-wrapper">
-                  <label for="type">Tipo</label>
-                  <button
-                  id="type" 
-                  type="" 
-                  name="type">
+                <div class="input-wrapper flex-1">
+                  <label>Tipo</label>
+                  <div class="switch-container">
+                    <input type="radio" name="modo" id="in-person" checked>
+                    <label for="in-person" class="option-label option-in-person" title="in-person"> <span>Presencial</span></label>
+                
+                    <input type="radio" name="modo" id="online">
+                    <label for="online" class="option-label option-online" title="Online">
+                      <span>online</span>
+                    </label>
+                
+                    <div class="switch-indicator"></div>
+                  </div>
                 </div>
   
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-2">
                   <label for="local">Local</label>
                   <input 
                   id="local" 

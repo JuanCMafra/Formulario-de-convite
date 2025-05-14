@@ -30,3 +30,82 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="date"]::placeholder {
   visibility: hidden; 
 }
+
+.event-info .flex{
+  gap: 1rem;
+}
+
+.switch-container{
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 3rem;
+  width: 100%;
+  max-width: 12,5rem;
+  border-radius: .5rem;
+  border: 1px solid var(--input-placeholder);
+  background-color: var(--input-base);
+  font: var(--body-md);
+  color: var(--input-placeholder);
+  padding: .75rem 1rem;
+  z-index: 0;
+}
+
+.switch-container input[type=radio]{
+  display: none;
+}
+
+.option-label {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: inline;
+  align-items: center;
+  justify-items: center;
+}
+
+.option-label::before{
+  content:"";
+  display: block;
+  gap: .5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.option-in-person::before{
+  background-image: url(/assets/icons/presencial.svg);
+}
+.option-online::before{
+  background-image: url(/assets/icons/online.svg);
+}
+
+.switch-indicator {
+  position: absolute;
+  top: .25rem;
+  left: .25rem;
+  width: calc(50% -.5rem);
+  height: 2.5rem;
+  border-radius: .25rem;
+  background-color: #869198;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+/* Estado selecionado */
+.switch-container:has(#online:checked) .switch-indicator {
+  transform: translateX(100%);
+}
+
+/* Ícones brancos quando selecionado */
+.switch-container:has(#in-person:checked) .option-in-person::before {
+  background-image: url(/assets/icons/presencial-select.svg);
+}
+
+.switch-container:has(#online:checked) .option-online::before {
+  background-image: url(/assets/icons/online-select.svg);
+}
