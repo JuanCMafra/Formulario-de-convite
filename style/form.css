@@ -1,11 +1,11 @@
 @import url(fields/index.css);
+@import url(fields/switch-type.css);
 form{
   margin-top: 2.5rem;
 }
 
 fieldset{
   border: none;
-
   display: grid;
   gap: 1rem;
 }
@@ -13,7 +13,6 @@ fieldset{
 legend{
   font: var(--heading-sm);
   color: var(--text-heading);
-  
 }
 
 .legend-tittle{
