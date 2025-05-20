@@ -1,0 +1,36 @@
+input, textarea, select{
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 1px solid var(--input-placeholder);
+  background-color: var(--input-base);
+  font: var(--body-md);
+  color: var(--input-placeholder);
+  padding: .75rem 1rem;
+}
+
+label{
+  font: var( --body-sm);
+  color: var( --text-body);
+  display: block;
+  margin-bottom: .75rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  outline: .005rem solid var( --brand-light);
+  border: .05rem solid var( --brand-dark);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none; 
+}
+
+input[type="date"]::placeholder {
+  visibility: hidden; 
+}
+
+.event-info .flex{
+  gap: 1rem;
+}
