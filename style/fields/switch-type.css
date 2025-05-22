@@ -5,7 +5,7 @@
   height: 3rem;
   width: 100%;
   border-radius: .5rem;
-  border: 1px solid var(--input-placeholder);
+  border: 1px solid var(--input-stroke);
   font: var(--body-md);
   color: var(--input-placeholder);
   padding: 0;
