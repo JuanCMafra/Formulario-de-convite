@@ -6,6 +6,7 @@
 
 .radio-theme{
   display: grid;
+  padding: .25rem;
   border-radius: .25rem;
   border: 1px solid var(--input-stroke);
   background-color:#2D3136;
