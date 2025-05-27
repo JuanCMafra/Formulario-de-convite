@@ -1,0 +1,84 @@
+.switch-mode{
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 2rem;
+  width: 4rem;
+  border-radius: 1rem;
+  border: 1px solid var(--input-stroke);
+  font: var(--body-md);
+  color: var(--input-placeholder);
+  padding: 0;
+  z-index: 0;
+}
+
+.switch-mode input[type=radio]{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.option-dark,
+.option-light {
+  flex: 1;
+  cursor: pointer;
+}
+
+.switch-mode-indicator {
+  position: absolute;
+  top: .25rem;
+  left: .25rem;
+  width: calc(50% - .50rem); 
+  height: calc(100% - .50rem);
+  border-radius: 50%;
+  background-color: #383D42;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  z-index: 1;
+}
+
+
+.switch-mode:has(#light:checked) .switch-mode-indicator {
+  transform:translateX(calc(100% + 0.50rem));
+  background-color: white;
+}
+
+
+.switch-mode:has(#light:checked){
+  background-color: var(--brand-light);
+}
+
+/* Estilização base */
+.switch-mode-label {
+  position: relative;
+  font: var(--body-md);
+  color: var(--text-primary, #fff);
+  min-width: 3.5rem;
+  height: 1rem;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.switch-mode-label::after {
+  content: "Escuro";
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Quando "Claro" está marcado */
+#light:checked + .switch-mode-label::after {
+  content: "Claro";
+}
+
+.switch-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.flex-3{
+  flex: 1;
+}
+
+.flex-4{
+  flex: 2;
+}

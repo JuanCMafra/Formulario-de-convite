@@ -27,7 +27,7 @@
 
       </div>
     </aside>
-    <main>
+     <main>
       <div id="main-container">
         <h1>Crie seu convite</h1>
           <form>
@@ -103,7 +103,6 @@
                 <img src="assets/icons/paint-brush.svg" alt="ìcone de calendário">
                 <legend>Personalização</legend>
               </div>
-
               
               <div id="color-main">
                 <label> Cor Principal </label>
@@ -267,7 +266,47 @@
                     <span>Outro</span>
                   </label>
                 </div>
-              </div>           
+              </div>  
+              
+              <div class="flex">
+                <div class="input-wrapper flex-3">
+                  <label>Estilo</label>
+                  <div class="switch-group">
+                    <div class="switch-mode">
+                      <label class="option-dark" title="dark">
+                        <input 
+                          id="dark" 
+                          type="radio" 
+                          name="style-mode"
+                          checked>
+                      </label>
+
+                      <label class="option-light" title="light">
+                        <input 
+                          id="light" 
+                          type="radio" 
+                          name="style-mode">
+                      </label>
+
+                      <div class="switch-mode-indicator"></div>
+                    </div>
+
+                    <span class="switch-mode-label" aria-hidden="true"></span>
+                  </div>
+                </div>
+
+                <div class="droparea-wrapper flex-4">
+                  <label for="main-photo">Foto de capa</label>
+                  <div class="dropzone">
+                    <input 
+                    id="main-photo" 
+                    type="file" 
+                    name="main-photo">
+                    <img src="assets/icons/upload.svg" alt="ícone de upload">
+                    <p>Selecionar</p>
+                  </div>
+                </div>
+              </div>
              
             </fieldset>
           </form>
