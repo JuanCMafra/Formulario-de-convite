@@ -1,9 +1,7 @@
 .switch-wrapper-toggle {
   display: flex;
   align-items: center;
-  gap: 1rem;
-
-  /* chave mágica: altera a segunda com base na primeira */
+  gap: .75rem;
 }
 
 .switch-toggle {
@@ -13,7 +11,7 @@
   height: 2rem;
   background: #1C1F21;
   border-radius: 1rem;
-  border: 1px solid var(--input-stroke);;
+  border: 1px solid var(--input-stroke);
   cursor: pointer;
 }
 
@@ -33,6 +31,10 @@
   background: #383D42;
   border-radius: 50%;
   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+ .switch-toggle:has(#toggle-main:checked){
+  background-color: #59B2FF;
 }
 
 .switch-toggle input:checked + .switch-indicator-toggle {
@@ -55,9 +57,7 @@
 .switch-wrapper-toggle:has(#toggle-main:checked) .switch-label::after {
   content: "Claro";
 }
- .switch-toggle:has(#toggle-main:checked){
-  background-color: #59B2FF;
-}
+
 
 .flex-3{
   flex: 1;
