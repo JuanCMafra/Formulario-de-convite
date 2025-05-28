@@ -271,29 +271,21 @@
               <div class="flex">
                 <div class="input-wrapper flex-3">
                   <label>Estilo</label>
-                  <div class="switch-group">
-                    <div class="switch-mode">
-                      <label class="option-dark" title="dark">
-                        <input 
-                          id="dark" 
-                          type="radio" 
-                          name="style-mode"
-                          checked>
-                      </label>
+                  <div class="switch-wrapper-toggle">
+                    <!-- Checkbox visível com o switch -->
+                    <label class="switch-toggle">
+                      <input type="checkbox" id="toggle-main" />
+                      <div class="switch-indicator-toggle"></div>
+                    </label>
 
-                      <label class="option-light" title="light">
-                        <input 
-                          id="light" 
-                          type="radio" 
-                          name="style-mode">
-                      </label>
-
-                      <div class="switch-mode-indicator"></div>
-                    </div>
-
-                    <span class="switch-mode-label" aria-hidden="true"></span>
+                    <!-- Checkbox oculta que muda o texto -->
+                    <label class="switch-text">
+                      <input type="checkbox" id="toggle-text" disabled />
+                      <span class="switch-label"></span>
+                    </label>
                   </div>
                 </div>
+
 
                 <div class="droparea-wrapper flex-4">
                   <label for="main-photo">Foto de capa</label>
