@@ -1,0 +1,21 @@
+.dropzone{
+  position: relative;
+  all: unset;
+  display: flex;
+  gap:.5rem;
+  place-items: center;
+  cursor: pointer;
+  background-color: #2D3136;
+  padding: .75rem;
+  border-radius: .5rem;
+  z-index: 2;
+}
+
+
+.chose-file {
+  position: relative;
+  z-index: 1;
+  & input[type=file]{
+    all: unset;   
+  }
+}
