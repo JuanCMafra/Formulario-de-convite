@@ -8,14 +8,18 @@
   background-color: #2D3136;
   padding: .75rem;
   border-radius: .5rem;
-  z-index: 2;
+  max-width: fit-content;
 }
 
+.dropzone:focus{
+  outline: .005rem solid var( --brand-light);
+  border: .05rem solid var( --brand-dark);
+}
 
-.chose-file {
-  position: relative;
-  z-index: 1;
-  & input[type=file]{
-    all: unset;   
-  }
+input[type='file'] {
+  display: none
+}
+
+.dropzone:hover {
+  background-color: #383D42;
 }
