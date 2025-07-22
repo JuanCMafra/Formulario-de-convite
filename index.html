@@ -293,7 +293,7 @@
                       <img src="assets/icons/upload.svg" alt="ícone de upload">
                       Selecionar
                     </label>
-                    <input id="main-photo" type="file" name="main-photo">
+                    <input id="main-photo" type="file" name="main-photo" accept="image/*">
                     <span id='file-name'></span>
                 </div>
               </div>
@@ -320,22 +320,35 @@
                   <label for="email">E-mail</label>
                   <input 
                   id="email" 
-                  type="" 
+                  type="email" 
                   name="email" 
                   lang="pt-br"
-                  placeholder="exemplo@email.com">
+                  placeholder="exemplo@email.com"
+                  required>
                 </div>
   
                 <div class="input-wrapper flex-2">
                   <label for="telephone">Telefone</label>
                   <input 
                   id="telephone" 
-                  type="" 
+                  type="tel" 
                   name="telephone" 
-                  lang="pt-br"
+                  size="11"          
+                  pattern="[0-9]{2}-[9]{1}[0-9]-{4}-[0-9]-{4}"
                   placeholder="(99) 99999-9999">
                 </div>
               </div>
+
+               <div class="line"></div>
+
+               <div class="terms">
+                <label for="conditions">Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
+                  <input type="checkbox" name="conditions" id="conditions">
+                <label for="send-emails">Aceito receber atualizações e promoções por e-mail</label>
+                  <input type="checkbox" name="send-emails" id="send-emails">
+                <label for="send-sms">Aceito receber atualizações e promoções por SMS<label>
+                  <input type="checkbox" name="send-sms" id="send-sms">
+               </div>
             </fieldset>
           </form>
       </div>
