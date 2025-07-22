@@ -1,0 +1,27 @@
+.line{
+  border: .1rem solid var(--input-stroke);
+  margin-top: 3rem;
+}
+.terms-wrapper{
+  display: block;
+  margin-top: 2.25rem;
+}
+
+.terms{ 
+  display: flex;
+  gap: .75rem;
+  margin-top: .25rem;
+  align-items: flex-start;
+  & a{
+    color: var(--brand-light);
+    font-weight: 500;
+  }
+}
+
+.checkbox-wrapper {
+  position: relative;
+
+  & input[type="checkbox"]{
+    all: unset;
+  }
+}
