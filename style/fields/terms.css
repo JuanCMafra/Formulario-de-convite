@@ -16,6 +16,7 @@
     color: var(--brand-light);
     font-weight: 500;
   }
+  cursor: pointer;
 }
 
 .checkbox-wrapper {
