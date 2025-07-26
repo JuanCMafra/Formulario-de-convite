@@ -20,8 +20,21 @@
 
 .checkbox-wrapper {
   position: relative;
-
-  & input[type="checkbox"]{
+  
+  & [type="checkbox"]{
     all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  .checkbox-image{
+  flex: 0 0 1.5rem;
+  height: 1.5rem;
+  background: url(../../assets/icons/checkbox-default.svg) no-repeat;
+  } 
+
+  &:has(:checked) .checkbox-image{
+    background: url(../../assets/icons/checkbox-checked.svg) no-repeat;
   }
 }
+
+
