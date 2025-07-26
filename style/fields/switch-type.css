@@ -40,10 +40,10 @@
 }
 
 .option-in-person .icon{
-  background-image: url(/assets/icons/presencial.svg);
+  background-image: url(assets/icons/presencial.svg);
 }
 .option-online .icon{
-  background-image: url(/assets/icons/online.svg);
+  background-image: url(assets/icons/online.svg);
 }
 
 .switch-indicator {
