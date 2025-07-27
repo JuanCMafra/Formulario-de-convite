@@ -71,3 +71,4 @@
 .switch-container:has(#online:checked) .option-online .icon {
   background-image: url(assets/icons/online-select.svg);
 }
+
