@@ -65,9 +65,9 @@
 
 /* Ícones azuis quando selecionado */
 .switch-container:has(#in-person:checked) .option-in-person .icon {
-  background-image: url(/assets/icons/presencial-select.svg);
+  background-image: url(assets/icons/presencial-select.svg);
 }
 
 .switch-container:has(#online:checked) .option-online .icon {
-  background-image: url(/assets/icons/online-select.svg);
+  background-image: url(assets/icons/online-select.svg);
 }
